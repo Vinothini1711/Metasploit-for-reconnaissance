@@ -22,7 +22,7 @@ Open terminal and try execute some kali linux commands
 ## EXECUTION STEPS AND ITS OUTPUT
 Find out the ip address of the attackers system
 #### OUTPUT:
-[WhatsApp Image 2024-04-16 at 11 01 32 AM](https://github.com/Vinothini1711/Echoserver/assets/144300204/ebeb5637-deff-4b72-8bf0-3bfe471258cd)
+![WhatsApp Image 2024-04-16 at 11 01 32 AM](https://github.com/Vinothini1711/Echoserver/assets/144300204/ebeb5637-deff-4b72-8bf0-3bfe471258cd)
 
 Invoke msfconsole:
 ![Screenshot 2024-04-16 110721](https://github.com/Vinothini1711/Echoserver/assets/144300204/a0875db3-fd18-4690-ad66-be9498a4abc4)
