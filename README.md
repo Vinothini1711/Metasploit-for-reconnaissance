@@ -21,7 +21,7 @@ Investigate on the various categories of tools as follows:
 Open terminal and try execute some kali linux commands
 ## EXECUTION STEPS AND ITS OUTPUT
 Find out the ip address of the attackers system
-#### OUTPUT:
+### OUTPUT:
 ![WhatsApp Image 2024-04-16 at 11 01 32 AM](https://github.com/Vinothini1711/Echoserver/assets/144300204/ebeb5637-deff-4b72-8bf0-3bfe471258cd)
 
 Invoke msfconsole:
@@ -33,25 +33,25 @@ Type help or a question mark "?" to see the list of all available commands you c
 #### Port Scanning:
 Following command is executed for scanning the systems on our local area network with a TCP scan (-sT) looking for open ports between 1 and 1000 (-p1-1000).
 msf >  nmap -sT 192.168.1810/24 -p1-1000
-#### OUTPUT:
+### OUTPUT:
 ![Screenshot 2024-04-16 135424](https://github.com/Vinothini1711/Echoserver/assets/144300204/ffaf2ae4-1cfe-4bc2-acac-0c6b0655f004)
 step4:
 use the db-nmap command to scan and save the results into Metasploit's postgresql attached database. In that way, you can use those results in the exploitation stage later.
 scan the targets with the command db_nmap as follows.
 msf > db_nmap 192.168.181.0/24
-#### OUTPUT:
+### OUTPUT:
 ![Screenshot 2024-04-16 131743](https://github.com/Vinothini1711/Echoserver/assets/144300204/c269f35c-9557-4414-a327-5bd814cc66d4)
 Metasploit has a multitude of scanning modules built in. If we open another terminal, we can navigate to Metasploit's auxiliary modules and list all the scanner modules.
 cd /usr/share /metasploit-framework/modules/auxiliary
 kali > ls -l
-#### OUTPUT:
+### OUTPUT:
 ![Screenshot 2024-04-16 133518](https://github.com/Vinothini1711/Echoserver/assets/144300204/21d4867d-a7b7-4347-8ddd-cf7d3349566b)
 
 Search is a powerful command in Metasploit that you can use to find what you want to locate. 
 msf >search name:Microsoft type:exploit
 ![Screenshot 2024-04-16 134336](https://github.com/Vinothini1711/Echoserver/assets/144300204/75464033-d029-41e1-b72d-82cf071276c0)
 The info command provides information regarding a module or platform,
-#### OUTPUT
+### OUTPUT
 ![Screenshot 2024-04-16 134439](https://github.com/Vinothini1711/Echoserver/assets/144300204/0250ac1c-41ae-4777-b1d4-c7c2a56188f3)
 Before beginning, set up the Metasploit database by starting the PostgreSQL server and initialize msfconsole database as follows:
 systemctl start postgresql
